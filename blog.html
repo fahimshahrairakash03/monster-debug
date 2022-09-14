@@ -115,37 +115,28 @@
 
     <section class="container p-5">
       <div>
-        <h1 class="text-center text-primary">Templet Literal</h1>
+        <h1 class="text-center text-primary">How jvascript event loop works</h1>
         <table class="table table-dark table-striped">
           <thead>
             <tr>
-              <th scope="col">Why use Templet Literal</th>
+              <th scope="col">How jvascript event loop works</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>
-                Template literals are sometimes informally called template
-                strings, because they are used most commonly for string
-                interpolation (to create strings by doing substitution of
-                placeholders). However, a tagged template literal may not result
-                in a string; it can be used with a custom tag function to
-                perform whatever operations you want on the different parts of
-                the template literal.Template literals are enclosed by backtick
-                (`) characters instead of double or single quotes. Along with
-                having normal strings, template literals can also contain other
-                parts called placeholders, which are embedded expressions
-                delimited by a dollar sign and curly braces: ${expression}. The
-                strings and placeholders get passed to a function — either a
-                default function, or a function you supply. The default function
-                (when you don't supply your own) just performs string
-                interpolation to do substitution of the placeholders and then
-                concatenate the parts into a single string. To supply a function
-                of your own, precede the template literal with a function name;
-                the result is called a tagged template. In that case, the
-                template literal is passed to your tag function, where you can
-                then perform whatever operations you want on the different parts
-                of the template literal.
+                The Event Loop has one simple job — to monitor the Call Stack
+                and the Callback Queue. If the Call Stack is empty, the Event
+                Loop will take the first event from the queue and will push it
+                to the Call Stack, which effectively runs it. Such an iteration
+                is called a tick in the Event Loop.
+                <br />
+                Also we can say The event loop is a process that waits for the
+                Call Stack to be clear before pushing callbacks from the Task
+                Queue to the Call Stack. Once the Stack is clear, the event loop
+                triggers and checks the Task Queue for available callbacks. If
+                there are any, it pushes it to the Call Stack, waits for the
+                Call Stack to be clear again, and repeats the same process.
               </td>
             </tr>
           </tbody>
