@@ -145,6 +145,9 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
 
 .card {
@@ -188,5 +191,9 @@ button {
   }
   .card {
     flex-direction: column;
+  }
+  #histories {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
