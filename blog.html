@@ -50,7 +50,7 @@
               <td>The client can only read local storage</td>
             </tr>
             <tr>
-              <th scope="row">3</th>
+              <th scope="row">4</th>
               <td>There is no transfer of data to the server</td>
               <td>There is no transfer of data to the server</td>
             </tr>
@@ -65,48 +65,43 @@
 
     <section class="container p-5">
       <div>
-        <h1 class="text-center text-primary">
-          Arrow Function vs Regular Function
-        </h1>
+        <h1 class="text-center text-primary">Global Scope vs Block Scope</h1>
         <table class="table table-dark table-striped">
           <thead>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">Arrow Function</th>
-              <th scope="col">Regular Function</th>
+              <th scope="col">Global scope</th>
+              <th scope="col">Block Scope</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">1</th>
               <td>
-                Inside of a regular JavaScript function, this value (aka the
-                execution context) is dynamic.
+                The variables defined outside of any function or curly brackets
+                are known as global variables and have global scope.
               </td>
               <td>
-                this value inside of an arrow function always equals this value
-                from the outer function. In other words, the arrow function
-                resolves this lexically.
+                The block scope can be defined as the scope of the variables
+                inside the curly brackets {}
               </td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td>the regular function can easily construct objects.</td>
               <td>
-                A consequence of this resolved lexically is that an arrow
-                function cannot be used as a constructor.
+                Global scope means that the variables can be accessed from any
+                part of that program
+              </td>
+              <td>
+                You are only allowed to refer to these variables from within the
+                curly brackets {}.
               </td>
             </tr>
             <tr>
               <th scope="row">3</th>
+              <td>The keywords var is used to define block variables.</td>
               <td>
-                Inside the body of a regular function, arguments is a special
-                array-like object containing the list of arguments with which
-                the function has been invoked.
-              </td>
-              <td>
-                On the other side, no arguments special keyword is defined
-                inside an arrow function.
+                The keywords let and const are used to define block variables.
               </td>
             </tr>
           </tbody>
